@@ -72,7 +72,7 @@ def main():
 	pygame.init()
 	screen = pygame.display.set_mode(cfg.SCREENSIZE, 0, 32)
 	pygame.display.set_icon(pygame.image.load(cfg.ICON_IMAGE_PATH))
-	pygame.display.set_caption('来自一位喜欢你的小哥哥')
+	pygame.display.set_caption('来自你的小宝贝——小胖子 章会斌')
 	# 背景音乐
 	pygame.mixer.music.load(cfg.BGM_PATH)
 	pygame.mixer.music.play(-1, 30.0)
@@ -106,11 +106,11 @@ def main():
 					button_yes.is_selected = True
 					root = Tk()
 					root.withdraw()
-					messagebox.showinfo('', '❤❤❤么么哒❤❤❤')
+					messagebox.showinfo('', '❤❤❤吴英婷小仙女 么么哒❤❤❤')
 					root.destroy()
 					is_agree = True
 		# --显示文字
-		showText(screen=screen, text='小姐姐, 我观察你很久了', position=(40, 50), 
+		showText(screen=screen, text='小仙女, 我观察你很久了', position=(40, 50), 
 				 fontpath=cfg.FONT_PATH, fontsize=25, fontcolor=cfg.BLACK, is_bold=False)
 		showText(screen=screen, text='做我女朋友好不好?', position=(40, 100), 
 				 fontpath=cfg.FONT_PATH, fontsize=25, fontcolor=cfg.BLACK, is_bold=True)
